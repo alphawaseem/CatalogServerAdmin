@@ -18,7 +18,7 @@ from dbhelper import *
 app = Flask(__name__)
 
 CLIENT_ID = json.loads(
-    open('client_secret.json', 'r').read())['web']['client_id']
+    open('/var/www/catalog/catalog/client_secret.json', 'r').read())['web']['client_id']
 
 
 def login_required(f):
@@ -412,4 +412,4 @@ def item_belongs_to_user(item):
 if __name__ == '__main__':
     app.debug = True
     app.secret_key = 'secret key'
-    app.run(host='0.0.0.0')
+    app.run(host='127.0.0.1')

@@ -41,7 +41,7 @@ class Item(Base):
         }
 
 engine = create_engine(
-    'postgresql://vagrant:password@localhost:5432/catalogs'
+    'postgresql://catalog:catalog@localhost:5432/catalog'
 )
 
 Base.metadata.create_all(engine)
