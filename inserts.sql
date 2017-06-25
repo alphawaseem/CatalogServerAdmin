@@ -1,7 +1,7 @@
 DROP DATABASE if exists catalogs;
-CREATE DATABASE catalogs;
+CREATE DATABASE catalog;
 
-\c catalogs;
+\c catalog;
 
 CREATE TABLE categories(
     id serial primary key not null,
